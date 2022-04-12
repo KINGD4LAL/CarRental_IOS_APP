@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         UIImage(named: "Car3")!
     ]
     var position = 0
+    public var hi = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
@@ -64,11 +65,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let model = models[indexPath.row]
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "Details") as? DetailsViewController else{
             return
         }
-        vc.title = "Hello"
+        
+       
+        vc.carImage = model.image
+        vc.modelinfo = model.title
+        vc.priceTot = model.details
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            models.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+        }
+    }
 }
