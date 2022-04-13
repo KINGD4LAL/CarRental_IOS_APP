@@ -15,6 +15,7 @@
 		75377CE828014BD50077BB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75377CE628014BD50077BB1F /* LaunchScreen.storyboard */; };
 		754D84B42801FAFF00CD203F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D84B32801FAFF00CD203F /* DetailsViewController.swift */; };
 		754D84B62801FBDC00CD203F /* NewRentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D84B52801FBDC00CD203F /* NewRentalViewController.swift */; };
+		755FFD112805DEB7006C58C1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755FFD102805DEB7006C58C1 /* ListViewController.swift */; };
 		7A236AADB6E42CA9EEFF9C14 /* Pods_CarRental_1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAEE08F1EE956C402951266 /* Pods_CarRental_1_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		75377CE928014BD50077BB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754D84B32801FAFF00CD203F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		754D84B52801FBDC00CD203F /* NewRentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRentalViewController.swift; sourceTree = "<group>"; };
+		755FFD102805DEB7006C58C1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		943C06B7E480FFF9C534202C /* Pods-CarRental.1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRental.1.0.debug.xcconfig"; path = "Target Support Files/Pods-CarRental.1.0/Pods-CarRental.1.0.debug.xcconfig"; sourceTree = "<group>"; };
 		EAAEE08F1EE956C402951266 /* Pods_CarRental_1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRental_1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				75377CE928014BD50077BB1F /* Info.plist */,
 				754D84B32801FAFF00CD203F /* DetailsViewController.swift */,
 				754D84B52801FBDC00CD203F /* NewRentalViewController.swift */,
+				755FFD102805DEB7006C58C1 /* ListViewController.swift */,
 			);
 			path = CarRental.1.0;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				75377CE028014BD30077BB1F /* ViewController.swift in Sources */,
 				754D84B62801FBDC00CD203F /* NewRentalViewController.swift in Sources */,
+				755FFD112805DEB7006C58C1 /* ListViewController.swift in Sources */,
 				75377CDC28014BD30077BB1F /* AppDelegate.swift in Sources */,
 				75377CDE28014BD30077BB1F /* SceneDelegate.swift in Sources */,
 				754D84B42801FAFF00CD203F /* DetailsViewController.swift in Sources */,

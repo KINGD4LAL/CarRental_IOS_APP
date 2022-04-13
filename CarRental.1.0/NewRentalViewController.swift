@@ -27,13 +27,13 @@ class NewRentalViewController: UIViewController, UIImagePickerControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         ModelText.delegate = self
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .done, target: self, action: #selector(didTapList))
         
     }
-    @objc func didTapList(){
+    @IBAction func didTapList(){
         if let make = ModelText.text, !make.isEmpty, AddImg.isHidden {
             complete?(globalImage, make, ("\(TotalLbl.text ?? "")(\(Timeperiod) Day/s)"))
         }
+        navigationController?.popToRootViewController(animated: false)
     }
     func TotalPrice(){
         TotalP = (DayPrice * Timeperiod)
